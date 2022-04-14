@@ -1,0 +1,77 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<script language="javascript" src="/js/Include.js"></script>
+
+
+<body>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="colmenu">
+        <div class="menu">
+          <div w3-include-html="/include/includemenu.html"></div> 
+        </div>
+
+
+
+      </div>
+            <div class="col">
+                <div class="colhoadon">
+                    <div class="container">
+                        <form action="../php/taophong.php" class="form-hoadon" method="post">
+                            <div class="inputspan">
+                                <span class="label label-info">Tên phòng</span>
+                                <input type="text" name="inputTenPhong" id="">
+
+                            </div>
+
+
+
+                            <div class="inputspan">
+                                <span class="label label-info">Giá phòng</span>
+                                <input type="text" name="inputGiaPhong" id="">
+                            </div>
+
+                            <div class="inputspan">
+                                <span class="label label-info">Mô tả</span>
+                                <input type="text" name="inputMoTa" id="">
+                            </div>
+
+                            <div class="inputspan">
+                                Trạng thái phòng:
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" name>
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Trống
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="buttonConfirm">                           
+                                <button type="submit" class="btn btn-primary">Cập nhật</button>
+                            </div>
+                        </form>
+                        
+
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+
+        <script>
+          includeHTML();
+          </script>
+</body>
+
+</html>
